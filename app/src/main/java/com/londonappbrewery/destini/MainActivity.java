@@ -46,9 +46,6 @@ public class MainActivity extends AppCompatActivity {
                // mStoryIndex=(mStoryIndex+1);
                 //update to T-3 story, T3-Ans1, T3-Ans2
                 Log.d("Destini", "Top Button has been clicked!");
-                //get the button id they clicked
-                //mCurrentButtonID = mTopButton.getId();
-                //mTopButton.getText();
                 Log.d("Destini", "Top Button Text is: "+mTopButton.getText());
                 mCurrentButtonText = (String) mTopButton.getText();
                 updateStory (mCurrentButtonText);
@@ -62,9 +59,7 @@ public class MainActivity extends AppCompatActivity {
         mBottomButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
-                //update to T-2 story
                 Log.d("Destini", "Bottom button has been clicked!");
-                //Log.d("Destini", "Bottom button ID is: "+mBottomButton.getId());
                 Log.d("Destini", "Top Button Text is: "+mBottomButton.getText());
                 mCurrentButtonText = (String) mBottomButton.getText();
                 updateStory (mCurrentButtonText);
